@@ -1,0 +1,84 @@
+@import '../abstract/variables';
+
+.card {
+    background-color: $dark-grayish-blue;
+    
+    border-radius: 6px;
+    
+    margin: 0 1rem;
+    padding: 2.5rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+
+    .card__title {
+        text-align: center;
+        text-transform: uppercase;
+        
+        font-size: $font-size / 2.5;
+        font-weight: 400;
+
+        letter-spacing: .2rem;
+
+        color: $neon-green;
+
+        margin-bottom: 1rem;
+    }
+
+    .card__advice {
+        font-size: $font-size / 1.2;
+        font-weight: 800;
+
+        text-align: center;
+
+        color: $light-cyan;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .card__container {
+        width: 100%;
+        height: 16px;
+        
+        background: url(../img/pattern-divider-mobile.svg) no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        margin-bottom: 1rem;
+    }
+
+    .card__random {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -10%;
+
+        width: 60px;
+        height: 60px;
+
+        background: url(../img/icon-dice.svg) no-repeat center, $neon-green;
+
+        border: none;
+        border-radius: 100%;
+
+        transition: .3s;
+
+        &:hover {
+            cursor: pointer;
+
+            box-shadow: 1px 1px 20px 1px $neon-green;
+        }
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .card {
+        width: 435px;
+
+        margin: 0;
+    }
+}
