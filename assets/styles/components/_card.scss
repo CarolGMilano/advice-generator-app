@@ -55,7 +55,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%);
-        bottom: -10%;
+        bottom: -12%;
 
         width: 60px;
         height: 60px;
@@ -80,5 +80,11 @@
         width: 435px;
 
         margin: 0;
+
+        .card__container {
+            background: url(../img/pattern-divider-desktop.svg) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
     }
 }
